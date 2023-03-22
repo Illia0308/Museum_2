@@ -1,0 +1,11 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}

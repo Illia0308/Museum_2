@@ -1,0 +1,26 @@
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    background-color: $c-gray;
+    position: relative;
+
+    &--with-menu,
+    .page {
+      overflow: hidden;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+    transition: 0.3s linear;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+}

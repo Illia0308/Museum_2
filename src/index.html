@@ -1,13 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  class="page"
+  lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__top top">
+          <a class="logo" href="#">
+            <img
+              src="./images/header/NAMU.png"
+              alt="NAMU"
+              class="logo__image"
+            >
+          </a>
+
+          <div class="top__icons">
+            <a href="#menu" class="icon">
+              <img
+                src="./images/header/menu.png"
+                alt="menu"
+                class="icon__image"
+              >
+            </a>
+
+            <a href="/" class="icon icon--lang icon--header">
+              <img
+                src="../src/images/header/UA.png"
+                alt="lang"
+                class="icon__image"
+              >
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="header__content">
+          <div class="header__text">
+            <div class="header__date">
+              10 серпня - 10 листопада
+            </div>
+            <h1 class="header__title">
+              Мистецтво ХІХ - ХХ ст.
+            </h1>
+            <div class="header__info">
+              Внесок українських митців у світову культуру 19-20 ст.
+            </div>
+            <a
+              href="#"
+              class="button button--header"
+            >
+              Купити квиток
+            </a>
+          </div>
+
+          <div class="header__image-container">
+            <img
+              src="../src/images/header/header.png"
+              alt="woman"
+              class="header__image">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="menu__top top">
+          <a href="#" class="logo">
+            <img src="../src/images/header/NAMU.png" alt="logo">
+          </a>
+
+          <div class="top__icons">
+            <a href="/" class="icon icon--lang">
+              <img
+                src="../src/images/header/UA.png"
+                alt="lang"
+                class="icon__image"
+              >
+            </a>
+
+            <a href="#" class="icon">
+              <img
+                src="../src/images/header/cross.png"
+                alt="cross"
+                class="icon__image"
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="menu__information">
+          <div class="menu__timetable">
+            Розклад сьогодні:
+            <br>
+            <span class="menu__bold-text">
+              12:00 - 19:00
+            </span>
+          </div>
+
+          <div class="menu__adress">
+            Адреса:
+            <br>
+            <span class="menu__bold-text">
+              Київ, вул. М. Грушевського, 6
+            </span>
+          </div>
+
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a
+                class="menu__link"
+                href="#exhibitions"
+              >
+                Актуальні виставки
+              </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a
+                class="menu__link"
+                href="#events"
+              >
+                Найближчі події
+              </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a
+                class="menu__link"
+                href="#news"
+              >
+                Новини
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="button button--header">
+          Купити квиток
+        </a>
+      </div>
+    </nav>
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>

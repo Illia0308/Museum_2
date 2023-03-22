@@ -1,0 +1,40 @@
+.menu {
+  background-color: $main-color;
+  height: 100vh;
+
+  &__top {
+    padding: 20px 0 0;
+    margin-bottom: 30px;
+  }
+
+  &__timetable,
+  &__adress {
+    @extend %additional-text;
+    color: $main-color-text;
+  }
+
+  &__bold-text {
+    font-weight: 600;
+  }
+
+  &__timetable {
+    margin-bottom: 20px;
+  }
+
+  &__adress {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $main-color-text;
+  }
+
+  &__link {
+    @extend %h5;
+  }
+}

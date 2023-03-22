@@ -1,0 +1,22 @@
+.icon {
+  &--lang {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url(../images/header/Union.png);
+      height: 4px;
+      width: 8px;
+      margin-left: 5px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--header {
+    display: none;
+    @include onTablets {
+      display: flex;
+    }
+  }
+}

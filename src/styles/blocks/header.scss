@@ -1,0 +1,87 @@
+.header {
+  background-color: $main-color;
+
+  @include onDesktop {
+    position: relative;
+    height: 100vh;
+  }
+
+  &__content {
+    @include onDesktop {
+      @include gridDesktop;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    @include onTablets {
+      @include gridTablets;
+      align-self: start;
+      margin-bottom: 70px;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 7;
+    }
+  }
+
+  &__top {
+    padding: 20px 0;
+    margin-bottom: 70px;
+    @include onDesktop {
+      margin-bottom: 124px;
+    }
+  }
+
+  &__date {
+    @extend %additional-text;
+    color: $main-color-text;
+    margin-bottom: 10px;
+    @include onTablets {
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__title {
+    @extend %h1;
+    color: $main-color-text;
+    margin-bottom: 30px;
+    @include onTablets {
+      grid-column: 1 / 6;
+      font-size: 72px;
+      line-height: 72px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info {
+    @extend %main-text;
+    color: $main-color-text;
+    margin-bottom: 40px;
+    @include onTablets {
+      grid-column: 1 / 4;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__image-container {
+    height: 273px;
+
+    @include onTablets {
+      height: 494px;
+    }
+
+    @include onDesktop {
+      position: absolute;
+      top: 137px;
+      left: 655px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+}

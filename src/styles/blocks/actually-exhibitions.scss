@@ -1,0 +1,23 @@
+.actually-exhibitions {
+  padding: 90px 0 0;
+
+
+  &__title {
+    @include h3;
+    color: #1c1b29;
+    margin-bottom: 60px;
+    @include onTablets {
+      font-size: 48px;
+    }
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}

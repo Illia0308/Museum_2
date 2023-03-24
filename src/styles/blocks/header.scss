@@ -1,6 +1,7 @@
 .header {
   background-color: $main-color;
   padding: 20px 0 0;
+  position: relative;
 
   @include onTablets {
     padding: 26px 0 0;

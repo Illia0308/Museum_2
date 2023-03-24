@@ -87,6 +87,8 @@
 
     @include onTablets {
       @include h3;
+      font-size: 48px;
+      line-height: 57.6px;
     }
 
     @include onDesktop {
@@ -112,6 +114,7 @@
 
   &__image {
     width: 100%;
+    
     @include onTablets {
       height: 466px;
     }

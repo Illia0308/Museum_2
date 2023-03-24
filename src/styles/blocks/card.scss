@@ -1,0 +1,36 @@
+.card {
+  &__first-image,
+  &__second-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 356px;
+  }
+
+  &__first-image {
+    background-image: url(../images/actually-exhibitions/image1-mobile.png);
+  }
+
+  &__second-image {
+    background-image: url(../images/actually-exhibitions/image2-mobile.png)
+  }
+
+
+  &__date {
+    @include main-text;
+    color: #cd4d31;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @include h4;
+    color: #1c1b29;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include main-text;
+    margin-bottom: 30px;
+  }
+}

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -11,9 +12,7 @@
   padding: 22px 0;
   width: 100%;
 
-  &--header {
-    @include onTablets {
-      grid-column: 1 / 4;
-    }
+  &--top {
+    grid-column: 1 / 4;
   }
 }

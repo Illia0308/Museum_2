@@ -1,18 +1,27 @@
 .header {
   background-color: $main-color;
+  padding: 20px 0 0;
+
+  @include onTablets {
+    padding: 26px 0 0;
+  }
 
   @include onDesktop {
-    position: relative;
     height: 100vh;
   }
 
   &__content {
+    @include onTablets {
+      @include gridTablets;
+    }
+
     @include onDesktop {
       @include gridDesktop;
     }
   }
 
   &__text {
+    grid-column: 1 / 7;
     margin-bottom: 40px;
     @include onTablets {
       @include gridTablets;
@@ -22,19 +31,19 @@
 
     @include onDesktop {
       grid-column: 1 / 7;
+      margin-bottom: 56px;
     }
   }
 
   &__top {
-    padding: 20px 0;
     margin-bottom: 70px;
-    @include onDesktop {
+    @include onTablets {
       margin-bottom: 124px;
     }
   }
 
   &__date {
-    @extend %additional-text;
+    @include additional-text;
     color: $main-color-text;
     margin-bottom: 10px;
     @include onTablets {
@@ -43,7 +52,7 @@
   }
 
   &__title {
-    @extend %h1;
+    @include h1;
     color: $main-color-text;
     margin-bottom: 30px;
     @include onTablets {
@@ -55,7 +64,7 @@
   }
 
   &__info {
-    @extend %main-text;
+    @include main-text;
     color: $main-color-text;
     margin-bottom: 40px;
     @include onTablets {
@@ -65,10 +74,10 @@
   }
 
   &__image-container {
-    height: 273px;
-
+    display: flex;
+    justify-content: center;
     @include onTablets {
-      height: 494px;
+      grid-column: 2 / 6;
     }
 
     @include onDesktop {
@@ -81,7 +90,39 @@
   }
 
   &__image {
-    height: 100%;
+    height: 245px;
     width: 100%;
+    @include onTablets {
+      height: 494px;
+    }
+
+    @include onDesktop {
+      height: 100%;
+    }
+  }
+
+  &__desktop-date {
+    display: none;
+    @include h6;
+
+    @include onDesktop {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      grid-column: 1 / 7;
+
+      &::after {
+        content: "";
+        width: 469px;
+        height: 1px;
+        background-color: #f1f5f4;
+      }
+    }
+  }
+
+  &__button {
+    @include onDesktop {
+      margin-bottom: 135px;
+    }
   }
 }

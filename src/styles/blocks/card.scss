@@ -13,9 +13,8 @@
   }
 
   &__second-image {
-    background-image: url(../images/actually-exhibitions/image2-mobile.png)
+    background-image: url(../images/actually-exhibitions/image2-mobile.png);
   }
-
 
   &__date {
     @include main-text;

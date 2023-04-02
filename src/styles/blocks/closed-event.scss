@@ -1,0 +1,83 @@
+.closed-event {
+  padding: 120px 0 90px;
+
+  @include onTablets {
+    padding: 160px 0 100px;
+  }
+
+  @include onDesktop {
+    padding: 200px 0 110px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    @include h3;
+    color: #1c1b29;
+    margin-bottom: 60px;
+    @include onTablets {
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+    }
+  }
+
+  &__first-image {
+    background-image: url(../images/closed-event/img05.png);
+  }
+
+  &__second-image {
+    background-image: url(../images/closed-event/img06.png);
+  }
+
+  &__first-image,
+  &__second-image {
+    @include onTablets {
+      grid-column: 1 / 4;
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__card {
+    @include onTablets {
+      grid-column: 1 / 7;
+      @include gridTablets;
+    }
+
+
+  @include onDesktop {
+    @include gridDesktop;
+  }
+
+  }
+
+  &__text {
+    @include onTablets {
+      grid-column: 4 / 7;
+    }
+
+    @include onDesktop {
+      grid-column: 5 / 11;
+    }
+
+  }
+
+  &__button {
+    @include onTablets {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 210px;
+    }
+
+  }
+
+}

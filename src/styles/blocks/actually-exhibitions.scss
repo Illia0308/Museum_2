@@ -1,22 +1,53 @@
 .actually-exhibitions {
   padding: 90px 0 0;
 
+  @include onTablets {
+    padding-top: 105px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
   &__title {
     @include h3;
     color: #1c1b29;
     margin-bottom: 60px;
     @include onTablets {
+      font-size: 40px;
+    }
+
+    @include onDesktop {
       font-size: 48px;
     }
   }
 
   &__button {
-    display: none;
+    @include onTablets {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 210px;
+    }
   }
 
-  &__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+  &__card {
+    @include onTablets {
+      &:first-child {
+        grid-column: 1 / 4;
+      }
+
+      &:last-child {
+        grid-column: 4 / 7;
+      }
+    }
+  }
+
+  &__first-image {
+    background-image: url(../images/actually-exhibitions/image1-mobile.png);
+  }
+
+  &__second-image {
+    background-image: url(../images/actually-exhibitions/image2-mobile.png);
   }
 }

@@ -1,0 +1,12 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 30px;
+
+    @include onTablets {
+      @include gridTablets;
+      margin-bottom: 0;
+    }
+
+}

@@ -35,6 +35,7 @@
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0;
+  color: $main-color-text;
 }
 
 @mixin main-text {
@@ -61,7 +62,7 @@
   color: $main-color-text;
   margin: 0;
   font-family: "Playfair-Display", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0;
 }
 

@@ -12,7 +12,29 @@
   padding: 22px 0;
   width: 100%;
 
-  &--top {
-    grid-column: 1 / 4;
+  @include onTablets {
+    width: 330px;
+  }
+
+  @include onDesktop {
+    width: 270px;
+  }
+
+  &--secondary {
+    background-color: $c-gray;
+    border: 1px solid #cd4d31;
+    color: #cd4d31;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 12px;
+      width: 14px;
+      background-image: url(../images/actually-exhibitions/arrowRight.png);
+    }
   }
 }

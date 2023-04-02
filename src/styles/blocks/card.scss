@@ -1,19 +1,19 @@
 .card {
-  &__first-image,
-  &__second-image {
+
+  &__image {
+    height: 356px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-bottom: 20px;
-    height: 356px;
-  }
 
-  &__first-image {
-    background-image: url(../images/actually-exhibitions/image1-mobile.png);
-  }
+    @include onTablets {
+      height: 420px;
+    }
 
-  &__second-image {
-    background-image: url(../images/actually-exhibitions/image2-mobile.png);
+    @include onDesktop {
+      height: 484px;
+    }
   }
 
   &__date {

@@ -105,8 +105,8 @@
     }
     @include onDesktop {
       position: absolute;
-      top: 137px;
-      left: 655px;
+      width: 624px;
+      height: 697px;
       right: 0;
       bottom: 0;
     }
@@ -114,7 +114,7 @@
 
   &__image {
     width: 100%;
-    
+
     @include onTablets {
       height: 466px;
     }
@@ -125,6 +125,7 @@
   }
 
   &__button {
+     grid-column: 1 / 4;
     @include onTablets {
       margin-bottom: 30px;
     }

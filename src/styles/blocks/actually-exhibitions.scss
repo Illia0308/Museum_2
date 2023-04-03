@@ -22,15 +22,6 @@
     }
   }
 
-  &__button {
-    @include onTablets {
-      position: absolute;
-      top: -5px;
-      right: 0;
-      width: 210px;
-    }
-  }
-
   &__card {
     @include onTablets {
       &:first-child {

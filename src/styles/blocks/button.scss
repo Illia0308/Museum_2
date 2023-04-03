@@ -7,7 +7,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  color: $main-color-text;
+  color: #f1f5f4;
   background-color: #cd4d31;
   padding: 22px 0;
   width: 100%;
@@ -24,6 +24,13 @@
     background-color: $c-gray;
     border: 1px solid #cd4d31;
     color: #cd4d31;
+
+    @include onTablets {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 210px;
+    }
 
     &::after {
       content: "";

@@ -1,0 +1,66 @@
+.news {
+  padding: 90px 0 80px;
+
+  @include onTablets {
+    padding: 120px 0 128px;
+  }
+
+  @include onDesktop {
+    padding: 110px 0 200px;
+  }
+
+  &__title {
+    @include h3;
+    color: #1c1b29;
+    margin-bottom: 60px;
+
+    @include onTablets {
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    margin-bottom: 120px;
+  }
+
+  &__image {
+    height: 280px;
+
+    @include onTablets {
+      height: 330px;
+    }
+
+    @include onDesktop {
+      height: 370px;
+    }
+
+    &--first {
+      background-image: url(../images/news/img08Mobile.png);
+      @include onDesktop {
+        background-image: url(../images/news/img08.png);
+      }
+    }
+
+    &--second {
+      background-image: url(../images/news/img09Mobile.png);
+      @include onDesktop {
+        background-image: url(../images/news/img09.png);
+      }
+    }
+  }
+
+  &__card {
+    &--first {
+      grid-column: 1 / 4;
+    }
+
+    &--second {
+      grid-column: 4 / 7;
+    }
+  }
+}

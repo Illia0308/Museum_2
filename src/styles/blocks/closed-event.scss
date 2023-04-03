@@ -52,11 +52,9 @@
       @include gridTablets;
     }
 
-
-  @include onDesktop {
-    @include gridDesktop;
-  }
-
+    @include onDesktop {
+      @include gridDesktop;
+    }
   }
 
   &__text {
@@ -67,17 +65,5 @@
     @include onDesktop {
       grid-column: 5 / 11;
     }
-
   }
-
-  &__button {
-    @include onTablets {
-      position: absolute;
-      top: -5px;
-      right: 0;
-      width: 210px;
-    }
-
-  }
-
 }

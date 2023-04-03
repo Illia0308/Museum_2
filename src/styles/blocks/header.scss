@@ -45,7 +45,7 @@
 
   &__date {
     @include additional-text;
-    color: $main-color-text;
+    color: $white-text;
     margin-bottom: 10px;
     @include onTablets {
       grid-column: 1 / 4;
@@ -54,7 +54,7 @@
 
   &__title {
     @include h1;
-    color: $main-color-text;
+    color: $white-text;
     margin-bottom: 30px;
     @include onTablets {
       grid-column: 1 / 6;
@@ -66,7 +66,7 @@
 
   &__info {
     @include main-text;
-    color: $main-color-text;
+    color: $white-text;
     margin-bottom: 40px;
     @include onTablets {
       grid-column: 1 / 4;
@@ -105,6 +105,7 @@
   &__desktop-date {
     display: none;
     @include h6;
+    color: $white-text;
 
     @include onDesktop {
       display: flex;

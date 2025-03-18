@@ -1,20 +1,202 @@
+<!-- #region head-->
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>Museum_2</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <!-- #endregion-->
+  <body class="page__body">
+    <header class="header">
+      <div class="top-bar header__top">
+        <a
+          href="#"
+          class="top-bar__logo"
+        >
+          <img
+            src="images/NAMU-logo.png"
+            alt="museum logo"
+          />
+        </a>
+
+        <div class="top-bar__icons">
+          <a
+            href="#menu"
+            class="icon icon--menu"
+          ></a>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__text">
+          <p class="header__subtitle header--additional-text">
+            10 серпня - 10 листопада
+          </p>
+          <h1 class="header__title">Мистецтво ХІХ - ХХ ст.</h1>
+          <p class="header__subtitle header--main-text">
+            Внесок українських митців у світову культуру 19-20 ст.
+          </p>
+          <a
+            href="#"
+            class="header__button"
+          >
+            Купити квиток
+          </a>
+        </div>
+
+        <img
+          src="../src/images/header-image-mobile.png"
+          alt="woman"
+          class="header__image"
+        />
+      </div>
+    </header>
+
+    <aside
+      class="menu page__menu"
+      id="menu"
+    >
+      <div class="top-bar menu__top">
+        <a
+          href="#"
+          class="top-bar__logo"
+        >
+          <img
+            src="images/NAMU-logo.png"
+            alt="museum logo"
+          />
+        </a>
+
+        <div class="top-bar__icons">
+          <a
+            href="#"
+            class="icon icon--lang"
+          ></a>
+
+          <a
+            href="#"
+            class="icon icon--cross"
+          ></a>
+        </div>
+      </div>
+
+      <div class="menu__content">
+        <div class="menu__info">
+          <div class="menu__time">
+            Розклад сьогодні:
+            <br />
+            <div class="menu__info--bold">12:00 - 19:00</div>
+          </div>
+
+          <div class="menu__adress">
+            Адреса:
+            <br />
+            <div class="menu__info--bold">Київ, вул. М. Грушевського, 6</div>
+          </div>
+        </div>
+
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="#actually"
+                class="nav__link"
+              >
+                Актуальні виставки
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a
+                href="#events"
+                class="nav__link"
+              >
+                Найближчі події
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a
+                href="#news"
+                class="nav__link"
+              >
+                Новини
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="#"
+          class="menu__button"
+        >
+          Купити квиток
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section
+        class="actually"
+        id="actually"
+      >
+        <h2>Актуальні виставки</h2>
+      </section>
+
+      <section
+        class="events"
+        id="events"
+      >
+        <h2>Найближчі події</h2>
+      </section>
+
+      <section
+        class="news"
+        id="news"
+      >
+        <h2>Новини</h2>
+      </section>
+
+      <section>
+        <h2></h2>
+      </section>
+    </main>
+
     <footer></footer>
     <script src="scripts/main.js"></script>
   </body>

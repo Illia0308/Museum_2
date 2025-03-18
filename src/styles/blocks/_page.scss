@@ -1,0 +1,25 @@
+.page {
+  &__body {
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__menu:target {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+h1,
+p {
+  margin: 0;
+}
